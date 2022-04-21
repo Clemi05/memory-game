@@ -52,4 +52,11 @@ const cardArray = [
 // Advanced way to sort an array randomly
 cardArray.sort(() => 0.5 - Math.random());
 
-console.log(cardArray);
+const gridDisplay = document.querySelector('#grid');
+
+function createBoard() {
+  for (let index = 0; index < 10; index++) {
+    const card = document.createElement('img');
+
+  }
+}
