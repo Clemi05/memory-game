@@ -4,13 +4,21 @@
 }
 
 .container {
-  width: 900px;
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-size: 7.5vmin;
 }
 
 #grid {
-  width: 400px;
-  height: 300px;
-  display: flex;
-  flex-wrap: wrap;
+  /* width: 400px;
+  height: 300px; */
+  --grid-size: 4;
+  --card-size: 20vmin;
+  display: grid;
+  grid-template-columns: repeat(var(--grid-size), var(--card-size));
+  grid-template-rows: repeat(var(--grid-size), var(--card-size));
+  gap: 1vmin;
 }
